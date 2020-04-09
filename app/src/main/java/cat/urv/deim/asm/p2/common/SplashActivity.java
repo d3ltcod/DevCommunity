@@ -2,7 +2,9 @@ package cat.urv.deim.asm.p2.common;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -16,13 +18,18 @@ public class SplashActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
-               goToMainActivity();
+                SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(
+                        getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+                if(sharedPref.getBoolean(getString(R.string.preference_first_time), true))
+                    goToActivity(TutorialActivity.class);
+                else
+                    goToActivity(MainActivity.class);
             }
         }, 1000);   //1 seconds
     }
 
-    private void goToMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+    private void goToActivity(Class c) {
+        Intent intent = new Intent(this, c);
         startActivity(intent);
         finish();
     }
