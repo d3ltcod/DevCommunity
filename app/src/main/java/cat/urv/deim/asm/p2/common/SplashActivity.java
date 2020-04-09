@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                goToMainActivity();
             }
-        }, 2000);   //2 seconds
+        }, 1000);   //1 seconds
     }
 
     private void goToMainActivity() {
