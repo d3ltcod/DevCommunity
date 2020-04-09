@@ -51,7 +51,6 @@
         android:textSize="@dimen/header_text"
         android:text="@string/signIn_error_button"
         android:layout_marginBottom="48dp"
-        android:layou
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
