@@ -12,4 +12,8 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+
+    <string name="signIn_error_bold">UPS&#8230; couldn\'t Sign In</string>
+    <string name="signIn_error_explanation">Your username and password don\'t match.\nPlease, try again.</string>
+    <string name="signIn_error_button">TRY AGAIN</string>
 </resources>
