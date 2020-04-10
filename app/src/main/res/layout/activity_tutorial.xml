@@ -37,8 +37,7 @@
             android:id="@+id/next_tutorial_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="6"
-            android:drawableStart="@drawable/ic_arrow_right"
+            android:drawableStart="@drawable/arrow_white_right"
             android:textColor="@color/colorWhite">
         </Button>
     </LinearLayout>
