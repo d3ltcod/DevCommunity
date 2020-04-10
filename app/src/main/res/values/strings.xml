@@ -16,6 +16,13 @@
     <string name="signIn_error_bold">UPS&#8230; couldn\'t Sign In</string>
     <string name="signIn_error_explanation">Your username and password don\'t match.\nPlease, try again.</string>
     <string name="signIn_error_button">TRY AGAIN</string>
+
     <string name="preference_file_key">cat.urv.deim.asm.p2.PREFERENCE_FILE_KEY</string>
     <string name="preference_first_time">preference_first_time</string>
+
+    <string name="tutorial_skip">Skip tutorial</string>
+    <string name="tutorial_message_1">Be in touch</string>
+    <string name="tutorial_message_2">Networking</string>
+    <string name="tutorial_message_3">Learn</string>
+
 </resources>
