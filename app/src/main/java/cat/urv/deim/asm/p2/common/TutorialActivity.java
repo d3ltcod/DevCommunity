@@ -42,7 +42,7 @@ public class TutorialActivity extends AppCompatActivity {
     // Create an anonymous implementation of OnClickListener for skip button
     private View.OnClickListener skipListener = new View.OnClickListener() {
         public void onClick(View v) {
-            startMainActivity();
+            startLoginActivity();
         }
     };
 
@@ -58,7 +58,7 @@ public class TutorialActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(currentPage);
                 progressBar.setSecondaryProgress(currentPercent+percentProgress);
             } else {
-                startMainActivity();
+                startLoginActivity();
             }
         }
     };
@@ -71,9 +71,9 @@ public class TutorialActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    private void startMainActivity() {
+    private void startLoginActivity() {
         writeEndTutorial();
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

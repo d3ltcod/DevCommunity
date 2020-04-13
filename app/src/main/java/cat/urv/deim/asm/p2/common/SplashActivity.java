@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
                 if(sharedPref.getBoolean(getString(R.string.preference_first_time), true))
                     goToActivity(TutorialActivity.class);
                 else
-                    goToActivity(MainActivity.class);
+                    goToActivity(LoginActivity.class);
             }
         }, 1000);   //1 seconds
     }
