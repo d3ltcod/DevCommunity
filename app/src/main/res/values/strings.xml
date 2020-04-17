@@ -18,6 +18,7 @@
     <string name="signIn_error_explanation">Your username and password don\'t match.\nPlease, try again.</string>
     <string name="signIn_error_email_pattern">Please, enter a valid email.</string>
     <string name="signIn_error_button">TRY AGAIN</string>
+    <string name="login_error_image">Login error image</string>
     <string name="signIn_message">Sign In</string>
     <string name="signIn_anonymous_message">Anonymous User</string>
     <string name="signIn_email_et_message">Email</string>
