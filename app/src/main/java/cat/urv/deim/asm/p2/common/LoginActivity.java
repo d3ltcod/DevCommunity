@@ -29,14 +29,13 @@ public class LoginActivity extends AppCompatActivity {
     private View.OnClickListener anonUserBtnListener = new View.OnClickListener() {
         public void onClick(View v) {
             writeInSharedPreferencesKindUser(false);
-            startMainActivity();
+            changeActivity(MainActivity.class, true);
         }
     };
 
     // Create an anonymous implementation of OnClickListener for skip button
     private View.OnClickListener signInBtnListener = new View.OnClickListener() {
         public void onClick(View v) {
-            // TODO - Call methods to get input data and check email and password
             EditText emailEditText = findViewById(R.id.email_editText);
             EditText passwordEditText = findViewById(R.id.password_editText);
             String email = emailEditText.getText().toString();
@@ -51,17 +50,17 @@ public class LoginActivity extends AppCompatActivity {
 
             if(checkCredentials(email, password)) {
                 writeInSharedPreferencesKindUser(true);
-                startMainActivity();
+                changeActivity(MainActivity.class, true);
             } else {
-                //TODO - Return Login Error Activity
+                changeActivity(LoginErrorActivity.class, false);
             }
         }
     };
 
-    private void startMainActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
+    private void changeActivity(Class activity, boolean end) {
+        Intent intent = new Intent(this, activity);
         startActivity(intent);
-        finish();
+        if(end) finish();
     }
 
     private void writeInSharedPreferencesKindUser(boolean type) {
