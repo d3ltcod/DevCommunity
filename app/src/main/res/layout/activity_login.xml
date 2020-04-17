@@ -56,7 +56,8 @@
             android:backgroundTint="@color/colorPrimary"
             android:textColor="#FFFFFF"
             android:textSize="@dimen/header_text"
-            android:text="@string/signIn_message" />
+            android:text="@string/signIn_message"
+            android:stateListAnimator="@null" />
 
         <Button
             android:id="@+id/anonymous_signIn_btn"
@@ -68,7 +69,8 @@
             android:textColor="#FFFFFF"
             android:textSize="@dimen/header_text"
             android:text="@string/signIn_anonymous_message"
-            android:layout_marginBottom="48dp"/>
+            android:layout_marginBottom="48dp"
+            android:stateListAnimator="@null" />
 
     </LinearLayout>
 </ScrollView>
