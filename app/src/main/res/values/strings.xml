@@ -16,6 +16,7 @@
 
     <string name="signIn_error_bold">UPS&#8230; couldn\'t Sign In</string>
     <string name="signIn_error_explanation">Your username and password don\'t match.\nPlease, try again.</string>
+    <string name="signIn_error_email_pattern">Please, enter a valid email.</string>
     <string name="signIn_error_button">TRY AGAIN</string>
     <string name="signIn_message">Sign In</string>
     <string name="signIn_anonymous_message">Anonymous User</string>
@@ -24,10 +25,13 @@
 
     <string name="preference_file_key">cat.urv.deim.asm.p2.PREFERENCE_FILE_KEY</string>
     <string name="preference_first_time">preference_first_time</string>
+    <string name="preference_logged_user">preference_logged_user</string>
 
     <string name="tutorial_skip">Skip tutorial</string>
     <string name="tutorial_message_1">Be in touch</string>
     <string name="tutorial_message_2">Networking</string>
     <string name="tutorial_message_3">Learn</string>
 
+    <string name="email_example">example@mail.com</string>
+    <string name="password_example">password</string>
 </resources>
