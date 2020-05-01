@@ -1,16 +1,16 @@
-package cat.urv.deim.asm.p2.common.ui.home;
+package cat.urv.deim.asm.p2.common.ui.articles;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class ArticlesViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public ArticlesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is articles fragment");
     }
 
     public LiveData<String> getText() {
