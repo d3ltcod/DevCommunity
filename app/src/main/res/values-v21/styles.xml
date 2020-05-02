@@ -4,18 +4,26 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/product_sans</item>
     </style>
 
-    <style name="AppTheme.SplashScreen" parent="Theme.AppCompat.Light">
+    <style name="AppTheme.SplashScreen" parent="AppTheme.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fontFamily">@font/roboto</item>
     </style>
 
-    <style name="AppTheme.LoginScreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme.LoginScreen" parent="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowDisablePreview">true</item>
+        <item name="android:fontFamily">@font/roboto</item>
     </style>
+
+    <style name="AppTheme.SemitransparentStatusBar" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorSemitransparentGray</item>
+    </style>
+
 </resources>

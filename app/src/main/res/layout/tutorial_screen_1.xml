@@ -20,5 +20,6 @@
         android:text="@string/tutorial_message_1"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
-        android:textSize="36sp" />
+        android:textSize="36sp"
+        android:fontFamily="@font/roboto" />
 </LinearLayout>
