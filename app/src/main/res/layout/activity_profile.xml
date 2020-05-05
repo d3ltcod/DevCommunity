@@ -28,6 +28,12 @@
         android:textColor="@color/colorGray"
         app:layout_constraintTop_toBottomOf="@+id/user_photo" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/username"/>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
@@ -40,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <TextView
+        android:id="@+id/email_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="@dimen/profile_body_padding"
@@ -47,5 +54,11 @@
         android:paddingBottom="@dimen/profile_body_padding"
         android:text="Email"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/email_text"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -42,4 +42,5 @@
     <string name="password_example">password</string>
     <string name="username_sample">Sandra Adams</string>
     <string name="user_profile_description">User profile image</string>
+    <string name="action_search">Search</string>
 </resources>
