@@ -5,6 +5,9 @@
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:fontFamily">@font/product_sans</item>
+        <item name="colorNavigationItem">@color/menu_item_color_state</item>
+        <item name="colorNavigationItemSelected">@color/colorWhite</item>
+        <item name="drawableNavigationItemBackground">@drawable/menu_background_color_state</item>
     </style>
 
     <style name="AppTheme.SplashScreen" parent="AppTheme.NoActionBar">
@@ -22,8 +25,11 @@
         <item name="android:fontFamily">@font/roboto</item>
     </style>
 
-    <style name="AppTheme.SemitransparentStatusBar" parent="AppTheme">
+    <style name="AppTheme.SemitransparentStatusBar" >
         <item name="android:statusBarColor">@color/colorSemitransparentGray</item>
+        <item name="itemIconTint">?attr/colorNavigationItem</item>
+        <item name="itemTextColor">?attr/colorNavigationItem</item>
+        <item name="itemBackground">?attr/drawableNavigationItemBackground</item>
     </style>
 
 </resources>
