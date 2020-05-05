@@ -8,7 +8,9 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dip"
-        android:layout_gravity="center|bottom">
+        android:layout_gravity="center|bottom"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <ImageView
             android:id="@+id/logoView"
