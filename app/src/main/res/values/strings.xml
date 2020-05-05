@@ -25,6 +25,7 @@
     <string name="login_error_image">Login error image</string>
     <string name="signIn_message">Sign In</string>
     <string name="signIn_anonymous_message">Anonymous User</string>
+    <string name="continue_anonymous_message">Continue Anonymously</string>
     <string name="signIn_email_et_message">Email</string>
     <string name="signIn_password_et_message">Password</string>
 

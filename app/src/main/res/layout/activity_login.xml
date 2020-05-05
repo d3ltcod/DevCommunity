@@ -21,30 +21,34 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/email_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints="email"
                 android:ems="10"
-                android:inputType="textEmailAddress"
-                android:hint="@string/signIn_email_et_message"
                 android:gravity="center"
-                android:autofillHints="email" />
+                android:hint="@string/signIn_email_et_message"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/password_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:hint="@string/signIn_password_et_message"
-                android:gravity="center"
+                android:layout_marginBottom="24dp"
                 android:autofillHints="password"
-                android:layout_marginBottom="24dp"/>
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/signIn_password_et_message"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -54,10 +58,10 @@
             android:layout_marginLeft="64dp"
             android:layout_marginRight="64dp"
             android:backgroundTint="@color/colorPrimary"
-            android:textColor="#FFFFFF"
-            android:textSize="@dimen/header_text"
+            android:stateListAnimator="@null"
             android:text="@string/signIn_message"
-            android:stateListAnimator="@null" />
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/anonymous_signIn_btn"
@@ -65,12 +69,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="64dp"
             android:layout_marginRight="64dp"
-            android:backgroundTint="@android:color/darker_gray"
-            android:textColor="#FFFFFF"
-            android:textSize="@dimen/header_text"
-            android:text="@string/signIn_anonymous_message"
             android:layout_marginBottom="48dp"
-            android:stateListAnimator="@null" />
+            android:backgroundTint="@color/button_anon_login"
+            android:stateListAnimator="@null"
+            android:text="@string/signIn_anonymous_message"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
 
     </LinearLayout>
 </ScrollView>
