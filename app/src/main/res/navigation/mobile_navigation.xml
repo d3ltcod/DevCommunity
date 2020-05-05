@@ -9,11 +9,7 @@
         android:id="@+id/nav_news"
         android:name="cat.urv.deim.asm.p2.common.ui.news.NewsFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_news">
-        <action
-            android:id="@+id/action_nav_news_self"
-            app:destination="@id/nav_news" />
-    </fragment>
+        tools:layout="@layout/fragment_news"/>
     <fragment
         android:id="@+id/nav_articles"
         android:name="cat.urv.deim.asm.p2.common.ui.articles.ArticlesFragment"

@@ -5,9 +5,11 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">96dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="profile_body_padding">72dp</dimen>
 
     <dimen name="title_text">20sp</dimen>
     <dimen name="normal_text">18sp</dimen>
     <dimen name="header_text">22sp</dimen>
     <dimen name="nav_header_font">26sp</dimen>
+    <dimen name="username_text">30sp</dimen>
 </resources>

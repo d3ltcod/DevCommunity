@@ -19,6 +19,9 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".TutorialActivity"
             android:theme="@style/AppTheme.SplashScreen" />
         <activity

@@ -39,4 +39,6 @@
 
     <string name="email_example">example@mail.com</string>
     <string name="password_example">password</string>
+    <string name="username_sample">Sandra Adams</string>
+    <string name="user_profile_description">User profile image</string>
 </resources>
