@@ -27,6 +27,5 @@
         tools:layout="@layout/fragment_events" />
     <activity
         android:id="@+id/nav_profile"
-        android:name="cat.urv.deim.asm.p2.common.ProfileActivity"
-        android:label="ProfileActivity" />
+        android:name="cat.urv.deim.asm.p2.common.ProfileActivity" />
 </navigation>
