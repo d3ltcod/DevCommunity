@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
+    private boolean logged = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,13 +25,16 @@ public class LoginActivity extends AppCompatActivity {
 
         Button signInBtn = findViewById(R.id.signIn_btn);
         signInBtn.setOnClickListener(signInBtnListener);
+
+        logged = getIntent().getBooleanExtra(getString(R.string.continue_anonymous_message), false);
+        if(logged)
+            anonBtn.setText(R.string.continue_anonymous_message);
     }
 
     // Create an anonymous implementation of OnClickListener for skip button
     private View.OnClickListener anonUserBtnListener = new View.OnClickListener() {
         public void onClick(View v) {
-            writeInSharedPreferencesKindUser(false);
-            changeActivity(MainActivity.class, true);
+            signIn(false);
         }
     };
 
@@ -49,8 +54,7 @@ public class LoginActivity extends AppCompatActivity {
             }
 
             if(checkCredentials(email, password)) {
-                writeInSharedPreferencesKindUser(true);
-                changeActivity(MainActivity.class, true);
+                signIn(true);
             } else {
                 changeActivity(LoginErrorActivity.class, false);
             }
@@ -61,18 +65,21 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(this, activity);
         startActivity(intent);
         if(end) finish();
-    }
 
-    private void writeInSharedPreferencesKindUser(boolean type) {
-        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(
-                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putBoolean(getString(R.string.preference_logged_user), type);
-        editor.apply();
     }
 
     private boolean checkCredentials(String email, String password) {
         //TODO - IMPLEMENT REAL LOGIN, THIS IS ONLY FOR SIMULATE SITUATION
         return (email.equals(getString(R.string.email_example)) && password.equals(getString(R.string.password_example)));
+    }
+
+    private void signIn(boolean type) {
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putBoolean(getString(R.string.preference_logged_user), type);
+        editor.apply();
+        if(!logged) changeActivity(MainActivity.class, true);
+        else finish();
     }
 }
