@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dev Community</string>
+    <string name="action_search">Buscar</string>
+    <string name="tutorial_message_3">Aprende</string>
+    <string name="tutorial_message_2">Comunicate</string>
+    <string name="tutorial_message_1">Informate</string>
+    <string name="tutorial_skip">Saltar Tutorial</string>
+    <string name="signIn_password_et_message">Contraseña</string>
+    <string name="signIn_email_et_message">Correo Electrónico</string>
+    <string name="signIn_message">Iniciar Sessión</string>
+    <string name="signIn_anonymous_message">Usuario Anónimo</string>
+    <string name="continue_anonymous_message">Continua Anónimo</string>
+    <string name="signIn_error_button">VOLVE A INTENTARLO</string>
+    <string name="signIn_error_email_pattern">Por favor, introduzca una dirección de correo electrónico válida.</string>
+    <string name="signIn_error_explanation">El usuario y contrseña no coinciden.</string>
+    <string name="signIn_error_bold">UPS... No se ha podido conectar.</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_calendar">Agenda</string>
+    <string name="menu_events">Eventos</string>
+    <string name="menu_home">Noticias</string>
+    <string name="menu_articles">Artículos</string>
+    <string name="action_settings">Configuración</string>
+</resources>

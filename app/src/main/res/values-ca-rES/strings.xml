@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dev Community</string>
+    <string name="action_settings">Configuració</string>
+    <string name="menu_home">Noticíes</string>
+    <string name="menu_articles">Artícles</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_calendar">Agenda</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_settings">Configuració</string>
+    <string name="signIn_error_bold">UPS... No s\'ha pogut connectar</string>
+    <string name="signIn_error_explanation">L\'usuari i contrasenya no coincideixen.</string>
+    <string name="signIn_error_email_pattern">Si us plau, introdueix una adreça de correu electrónic vàlida.</string>
+    <string name="signIn_error_button">TORNA-HO A PROVAR</string>
+    <string name="signIn_message">Iniciar Sessió</string>
+    <string name="signIn_anonymous_message">Usuari Anònim</string>
+    <string name="continue_anonymous_message">Continua Anònim</string>
+    <string name="signIn_email_et_message">Correu Electrònic</string>
+    <string name="signIn_password_et_message">Contrasenya</string>
+    <string name="tutorial_skip">Saltar Tutorial</string>
+    <string name="tutorial_message_2">Comunica\'t</string>
+    <string name="tutorial_message_1">Informa\'t</string>
+    <string name="tutorial_message_3">Aprèn</string>
+    <string name="action_search">Cercar</string>
+</resources>
