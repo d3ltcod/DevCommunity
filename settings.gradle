@@ -1,2 +1,2 @@
 rootProject.name='Dev Community'
-include ':app'
+include ':app', ':commanagerdc'
