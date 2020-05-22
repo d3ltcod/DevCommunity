@@ -9,4 +9,6 @@
     <color name="colorGrayHeader">#666666</color>
     <color name="colorSemitransparentGray">#66666680</color>
     <color name="colorPrimaryTransparent">#3302bbd2</color>
+    <color name="colorGrayBackground">#f5f5f5</color>
+    <color name="colorGrayToggleButton">#808080</color>
 </resources>

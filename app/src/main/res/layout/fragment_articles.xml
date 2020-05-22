@@ -6,11 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".ui.articles.ArticlesFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_list"
+        android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/menu_articles"
-        android:textSize="@dimen/header_text"
-        android:gravity="center" />
+        android:background="@color/colorGrayBackground"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
