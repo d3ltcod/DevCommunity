@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cat.urv.deim.asm.p2.common">
-
     <!-- This is required for Picasso to work. -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- Used to adjust the work load depending on the type of network the device is using. -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- Used to load images from the gallery content provider. -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Used to adjust the work load depending on the type of network the device is using. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Used to load images from the gallery content provider. -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -20,17 +16,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name="cat.urv.deim.asm.p3.shared.FaqsActivity"
+            android:label="@string/menu_faqs"/>
+        <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.LoginScreen"/>
+            android:theme="@style/AppTheme.LoginScreen" />
         <activity
             android:name=".LoginErrorActivity"
-            android:theme="@style/AppTheme.LoginScreen"/>
+            android:theme="@style/AppTheme.LoginScreen" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ProfileActivity"
-            android:label="@string/menu_profile"/>
+            android:label="@string/menu_profile" />
         <activity
             android:name=".TutorialActivity"
             android:theme="@style/AppTheme.SplashScreen" />

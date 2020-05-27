@@ -28,4 +28,10 @@
     <activity
         android:id="@+id/nav_profile"
         android:name="cat.urv.deim.asm.p2.common.ProfileActivity" />
+
+    <activity
+        android:id="@+id/nav_faqs"
+        android:name="cat.urv.deim.asm.p3.shared.FaqsActivity"
+        android:label="activity_faqs"
+        tools:layout="@layout/activity_faqs" />
 </navigation>

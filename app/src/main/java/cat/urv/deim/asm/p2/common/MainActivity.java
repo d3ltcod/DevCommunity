@@ -19,6 +19,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import java.util.Objects;
 
+import cat.urv.deim.asm.p3.shared.FaqsActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -49,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 goProfileActivity();
+                drawer.closeDrawers();
+                return true;
+            }
+        });
+
+        navigationView.getMenu().findItem(R.id.nav_faqs).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                goFaqsActivity();
                 drawer.closeDrawers();
                 return true;
             }
@@ -111,4 +122,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(getString(R.string.continue_anonymous_message), true);
         startActivity(intent);
     }
+
+    private void goFaqsActivity() {
+        Intent intent = new Intent(this, FaqsActivity.class);
+        startActivity(intent);
+    }
+
 }
