@@ -38,7 +38,7 @@ public class ArticlesFragment extends Fragment {
         //Load data from commanagerdc
         DataProvider dataProvider = DataProvider.getInstance(Objects.requireNonNull(getActivity()).getApplicationContext(),R.raw.faqs,R.raw.news,R.raw.articles,R.raw.events,R.raw.calendar);
 
-        // specify an adapter (see also next example)
+        // specify an adapter
         RecyclerView.Adapter cardListAdapter = new ArticlesListAdapter(dataProvider.getArticles());
         recyclerView.setAdapter(cardListAdapter);
 
