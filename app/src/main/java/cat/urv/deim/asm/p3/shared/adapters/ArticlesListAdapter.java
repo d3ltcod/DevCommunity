@@ -15,9 +15,11 @@ import java.util.List;
 import cat.urv.deim.asm.libraries.commanagerdc.models.Article;
 import cat.urv.deim.asm.p2.common.R;
 
-public class ArticlesListAdapter extends RecyclerView.Adapter<ArticlesListAdapter.ArticleListViewHolder> {
+public class ArticlesListAdapter extends RecyclerView.Adapter<ArticlesListAdapter.ArticleListViewHolder>
+        implements View.OnClickListener{
 
     private List<Article> dataList;
+    private View.OnClickListener listener;
 
     static class ArticleListViewHolder extends RecyclerView.ViewHolder {
 
@@ -47,6 +49,9 @@ public class ArticlesListAdapter extends RecyclerView.Adapter<ArticlesListAdapte
     @Override
     public ArticlesListAdapter.ArticleListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View rootView = LayoutInflater.from(parent.getContext()).inflate(R.layout.article_card_view,parent,false);
+
+        rootView.setOnClickListener(this);
+
         return new ArticleListViewHolder(rootView);
     }
 
@@ -66,5 +71,15 @@ public class ArticlesListAdapter extends RecyclerView.Adapter<ArticlesListAdapte
     @Override
     public int getItemCount() {
         return dataList.size();
+    }
+
+    public void setOnClickListener(View.OnClickListener listener) {
+        this.listener = listener;
+    }
+
+    @Override
+    public void onClick(View view) {
+        if(listener != null)
+            listener.onClick(view);
     }
 }
